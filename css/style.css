@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%;height: 100vh;
+    background-image: url('../img/Background.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+.carousel-inner img {
+    margin-top: 20px;
+    margin-left:200px;
+    width: 65%;
+    height: 80vh;
+}
+.centerdiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  
+}
+.centerdiv a{
+    height: 100px;
+    width: 100px;
+    background-color:#f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin: 30px;
+    line-height: 100px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    position: relative;overflow: hidden;
+}
+.centerdiv a i{
+    transition: all 0.3s linear;
+}
+.centerdiv a:hover .fa{
+    transform: scale(1.4);
+    color: white;
+  
+}
+.fa-facebook{
+    color:darkblue;
+}
+.fa-youtube{
+    color:#e84118
+}
+.fa-instagram{
+    color:#e84393
+}
+.fa-twitter{
+    color: #0097e6;
+}
+.fa-linkedin{
+    color: #0097e6;
+}
+.centerdiv a:before{
+    content: '';
+    width: 120%;height: 120%;
+    position: absolute;top: 90%;
+    left: -50%;
+    background-color:#800080;
+    transform: rotate(60deg);
+}
+.centerdiv a:hover:before{
+    animation: socialicons 0.8s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes socialicons{
+    0%{top: 90%;left: -50%;}
+    50%{top: -60%;left: -10%;}
+    100%{top: -10%;left: -10%;}
+}

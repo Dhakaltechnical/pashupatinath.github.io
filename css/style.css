@@ -76,3 +76,6 @@ header{
     50%{top: -60%;left: -10%;}
     100%{top: -10%;left: -10%;}
 }
+html{
+    scroll-behaviour:smooth;
+}

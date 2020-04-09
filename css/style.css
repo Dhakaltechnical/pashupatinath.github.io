@@ -77,5 +77,5 @@ header{
     100%{top: -10%;left: -10%;}
 }
 html{
-    scroll-behaviour:smooth;
+    scroll-behavior:smooth;
 }
